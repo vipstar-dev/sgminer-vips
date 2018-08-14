@@ -2,9 +2,8 @@
 #include <inttypes.h>
 #include "../miner.h"
 #include "../compat.h"
-#include "../vipstar/sha2.h"
+#include "vipstar.h"
 #ifdef USE_OPENCL
-#include "../vipstar/cl.h"
 
 #define OCLSTRINGIFY(...) #__VA_ARGS__
 int scanhash_sha256d_vips_cl(int thr_id, struct work *work, uint32_t max_nonce, uint64_t *hashes_done, struct cl_ctx *cl)
