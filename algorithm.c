@@ -34,6 +34,7 @@
 #include "algorithm/whirlpoolx.h"
 #include "algorithm/lyra2re.h"
 #include "algorithm/pluck.h"
+#include "algorithm/vipstar.h"
 
 #include "compat.h"
 
@@ -59,6 +60,7 @@ const char *algorithm_type_str[] = {
   "WhirlpoolX",
   "Lyra2RE",
   "Pluck"
+  "Vipstar"
 };
 
 void sha256(const unsigned char *message, unsigned int len, unsigned char *digest)
